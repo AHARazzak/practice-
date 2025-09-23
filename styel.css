@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Karla:ital,wght@0,200..800;1,200..800&display=swap')
+;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 80px rgb(0,0,0, 0.5);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 800;
+}
+.nav-item{
+font-family: "Audiowide", sans-serif;
+ border-bottom: 5px solid transparent;
+}
+.nav-item:hover{
+  border-bottom-color: aliceblue;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+   
+}
+section{
+    width: 100%;
+    min-width: 100vh;
+    
+}
+
+#Home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(123,4,78,.4),rgba(34,56,78,.6)),url(./whit\ bg\ head\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Home p{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    font-family: "Audiowide", sans-serif; ;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+#Home p:nth-child(1){
+    animation-delay: 0s;
+}
+#Home p:nth-child(2){
+    animation-delay: 3s;
+}
+#Home p:nth-child(3){
+    animation-delay: 6s;
+}
+#Home p:nth-child(4){
+    animation-delay: 9s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@media screen and (max-width:576px) {
+   nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 80px rgb(0,0,0, 0.5);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 800;
+}
+.nav-item{
+font-family: "Audiowide", sans-serif;
+ border-bottom: 5px solid transparent;
+}
+.nav-item:hover{
+  border-bottom-color: aliceblue;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+   
+}
+section{
+    width: 100%;
+    min-width: 100vh;
+    
+}
+
+#Home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(123,4,78,.4),rgba(34,56,78,.6)),url(./whit\ bg\ head\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Home p{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    font-family: "Audiowide", sans-serif; ;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+#Home p:nth-child(1){
+    animation-delay: 0s;
+}
+#Home p:nth-child(2){
+    animation-delay: 3s;
+}
+#Home p:nth-child(3){
+    animation-delay: 6s;
+}
+#Home p:nth-child(4){
+    animation-delay: 9s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+    
+}
+#Home span{
+    color: brown;
+}
+/*about*/
+#about{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 100, 100, 0.301);
+    
+    
+}
+.circal{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    border-color: rgb(248, 246, 246);
+    border: 5px solid ;
+    position: relative;
+    box-shadow: 0px 5px 12px rgb(245, 243, 243);
+    transition: 1s;
+    
+    
+}
+.circal img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    top: -2%;
+    left: -1%;  
+    filter: drop-shadow(0px 30px 40px black);  
+    
+}
+.circal:hover{
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circal:hover img{
+     border-radius:10px;
+    filter: drop-shadow(0px 12px 6px blacks);
+    border-right: 5px;
+}
+.circal:hover .content{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    color: black;
+    width: 50%;
+    opacity: 1;
+}
+.circal .content{
+    opacity: 0;
+}
+@media screen and (max-width:576px){
+
+    .circal{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    border-color: rgb(248, 246, 246);
+    border: 5px solid ;
+    position: relative;
+    box-shadow: 0px 5px 12px rgb(245, 243, 243);
+    transition: 1s;
+    
+}
+
+
+    .circal:hover{
+    width: 300px;
+    height: 620px;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+    
+    
+
+.circal:hover .content{
+    position: absolute;
+    top: 60%;
+    right:  0;
+    bottom: 0px;
+    color: black;
+    width: 100%;
+    opacity: 1;
+     padding: 10px;
+}
+.circal .content{
+    opacity: 0;
+}}
