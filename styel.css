@@ -110,7 +110,7 @@ section{
     box-sizing: border-box;}
 
 #Home{
-    width: 50%;
+    width: 20%;
     height: 50vh;
     background: linear-gradient( rgba(123,4,78,.4),rgba(34,56,78,.6)),url(./whit\ bg\ head\ img.png);
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ section{
 }
 #Home p{
     position: absolute;
-    top: 50%;
+    top: 20%;
     font-size: 50px;
     font-family: "Audiowide", sans-serif; ;
     opacity: 0;
@@ -251,4 +251,11 @@ section{
 /*skill*/
 .container{
     margin: 6%;
+}
+.progress{
+    box-shadow: 0px 5px 15px black;
+    margin: 6%;
+}
+.progress:hover{
+     box-shadow: 0px 10px 20px rgb(2, 2, 2);
 }
